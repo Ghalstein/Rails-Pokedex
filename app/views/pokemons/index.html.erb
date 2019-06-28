@@ -1,0 +1,7 @@
+<h1> Pokemon you have seen: </h1>
+  <ol>
+    <% @pokemons.each do |pokemon| %>
+      <h2> <li> <%= link_to pokemon.name, pokemon_path(pokemon) %> </li> </h2>
+    <% end %>
+  </ol>
+  <button> <%= link_to "Enter a new pokemon finding!", new_pokemon_path %> </button>

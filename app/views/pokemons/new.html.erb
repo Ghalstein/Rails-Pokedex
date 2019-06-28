@@ -1,0 +1,10 @@
+<h1> What pokemon did you find?</h1>
+  <%= form_for @pokemon do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :weight %>
+    <%= f.number_field :weight %>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+    <%= f.submit "Record this pokémon" %>
+  <% end %>
